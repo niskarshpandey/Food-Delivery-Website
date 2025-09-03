@@ -1,11 +1,20 @@
- import React, { useContext } from 'react'
+ import React, { useContext, useEffect } from 'react'
 import { MdFastfood } from "react-icons/md"
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingBag } from "react-icons/lu"
 import { dataContext } from '../Context/UserContext';
+import { food_items } from '../food';
 
-const Nav = () => {
-    let {input, setInput} = useContext(dataContext)
+function Nav ()  {
+    let {input, setInput, cate, setCate, ShowCart, setShowCart} = useContext(dataContext)
+    useEffect(()=>{
+      let newlist = food_items.filter((item)=>item.food_name.includes(input)||item.food_name.toLowerCase().includes(input)||item.food_name.toUpperCase().includes(input))
+      setCate(newlist)
+    }, [input])
+
+
+
+
   return (
     <div className='w-full h-[100px] flex justify-between items-center px-5 md:px-8'>
         <div className='w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl'>
@@ -14,9 +23,10 @@ const Nav = () => {
         <form className='w-[45%] md:w-[70%] h-[60px] bg-white flex items-center px-5 gap-5 
         rounded-md shadow-md' onSubmit={(e)=>(e.preventDefault())}>
                 <IoSearch className='text-orange-500 w-[20px] h-[20px]'/>
-                <input className='w-[100%] outline-none text-[12px] md:text-[15px]' type="text" placeholder='Search Items...' onChange={(e)=>{e.target.value}} value={input}/>
+                <input className='w-[100%] outline-none text-[12px] md:text-[15px]' type="text" placeholder='Search Items...' onChange={(e)=>setInput
+                  (e.target.value)} value={input}/>
         </form>
-        <div className='w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl relative'>
+        <div className='w-[60px] h-[60px] bg-white flex justify-center items-center rounded-md shadow-xl relative cursor-pointer' onClick={()=>setShowCart(true)}>
             <span className='absolute top-0 right-2 text-orange-500 font-bold text-[16px]'>0</span>
             <LuShoppingBag className='w-[30px] h-[30px] text-orange-500 '/>
         </div>

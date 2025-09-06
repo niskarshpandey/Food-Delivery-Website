@@ -49,7 +49,7 @@ food-delivery-website/
 └─ tailwind.config.js
 
 
-
+---
 ##⚡ Installation & Run Locally
 bash
 Copy code

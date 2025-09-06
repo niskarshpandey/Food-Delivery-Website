@@ -1,12 +1,76 @@
-# React + Vite
+# 🍔 Food Delivery React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19.1.1-blue)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-3.3.2-green)
+![Redux](https://img.shields.io/badge/ReduxToolkit-2.9.0-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Currently, two official plugins are available:
+A simple **Food Delivery Website** built with React, Redux Toolkit, and Tailwind CSS.  
+Users can browse food categories, add items to the cart, view order summary, and see toast notifications when items are added.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse food items by categories
+- Add / Remove items from cart
+- Increment / Decrement quantity
+- Real-time cart total, taxes, and delivery fee calculation
+- Toast notifications for user actions (item added)
+- Responsive design using Tailwind CSS
+- Frontend state management with Redux Toolkit
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React 19.1.1, Tailwind CSS  
+- **State Management**: Redux Toolkit  
+- **Icons**: react-icons  
+- **Notifications**: react-toastify  
+- **Bundler**: Vite  
+
+---
+
+## 📁 Project Structure
+
+```text
+food-delivery-website/
+├─ public/
+├─ src/
+│  ├─ assets/       # Images for food items
+│  ├─ Components/   # React components (Card, Card2, Nav, etc.)
+│  ├─ Context/      # UserContext for global state
+│  ├─ Pages/        # Home.jsx
+│  ├─ redux/        # Redux slices (cartSlice.js)
+│  ├─ food.js       # Sample food data
+│  └─ App.jsx
+├─ package.json
+└─ tailwind.config.js
+⚡ Installation & Run Locally
+bash
+Copy code
+# Clone the repository
+git clone https://github.com/yourusername/food-delivery-react-site.git
+cd food-delivery-react-site
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+Open http://localhost:5173 to view it in the browser.
+
+👨‍💻 Usage
+👆 Click on a category to filter food items
+
+➕ Add items to cart with "Add to dish" button
+
+🛒 View cart, update quantity, or remove items
+
+💳 Click "Place Order" (UI only)
+
+🔔 Toast notifications appear on actions
+
+📜 License
+This project is open source and free to use.

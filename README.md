@@ -48,9 +48,9 @@ food-delivery-website/
 ├─ package.json
 └─ tailwind.config.js
 
----
 
-⚡ Installation & Run Locally
+
+##⚡ Installation & Run Locally
 bash
 Copy code
 # Clone the repository

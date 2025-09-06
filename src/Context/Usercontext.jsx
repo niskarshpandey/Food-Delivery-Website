@@ -15,12 +15,12 @@ const UserContext = ({children}) => {
         setShowCart
     }
   return (
-    <div>
+   
         <dataContext.Provider value={data}>
             {children} 
         </dataContext.Provider>
         
-    </div>
+    
   )
 }
 

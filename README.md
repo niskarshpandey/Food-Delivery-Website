@@ -47,6 +47,9 @@ food-delivery-website/
 │  └─ App.jsx
 ├─ package.json
 └─ tailwind.config.js
+
+---
+
 ⚡ Installation & Run Locally
 bash
 Copy code
@@ -61,6 +64,8 @@ npm install
 npm run dev
 Open http://localhost:5173 to view it in the browser.
 
+---
+
 👨‍💻 Usage
 👆 Click on a category to filter food items
 
@@ -71,6 +76,8 @@ Open http://localhost:5173 to view it in the browser.
 💳 Click "Place Order" (UI only)
 
 🔔 Toast notifications appear on actions
+
+---
 
 📜 License
 This project is open source and free to use.

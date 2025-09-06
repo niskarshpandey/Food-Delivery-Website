@@ -1,9 +1,11 @@
-# 🍔 Food Delivery React Website
+🍔 Food Delivery React Website [Live Demo](https://food-delivery-reactsite.netlify.app/)
 
-![React](https://img.shields.io/badge/React-19.1.1-blue)
-![Tailwind](https://img.shields.io/badge/TailwindCSS-3.3.2-green)
-![Redux](https://img.shields.io/badge/ReduxToolkit-2.9.0-purple)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![React](https://img.shields.io/badge/React-19.1.1-blue?logo=react&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-skyblue?logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-3.0-orange?logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 
 A simple **Food Delivery Website** built with React, Redux Toolkit, and Tailwind CSS.  
 Users can browse food categories, add items to the cart, view order summary, and see toast notifications when items are added.
@@ -34,7 +36,6 @@ Users can browse food categories, add items to the cart, view order summary, and
 
 ## 📁 Project Structure
 
-```text
 food-delivery-website/
 ├─ public/
 ├─ src/
@@ -48,10 +49,11 @@ food-delivery-website/
 ├─ package.json
 └─ tailwind.config.js
 
+---
 
-⚡ Installation & Run Locally
-bash
-Copy code
+## ⚡ Installation & Run Locally
+
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/food-delivery-react-site.git
 cd food-delivery-react-site
@@ -61,9 +63,14 @@ npm install
 
 # Run development server
 npm run dev
-Open http://localhost:5173 to view it in the browser.
+
+Open http://localhost:5173
+ to view it in the browser.
+
+
 
 👨‍💻 Usage
+
 👆 Click on a category to filter food items
 
 ➕ Add items to cart with "Add to dish" button
@@ -75,4 +82,5 @@ Open http://localhost:5173 to view it in the browser.
 🔔 Toast notifications appear on actions
 
 📜 License
-This project is open source and free to use.
+
+This project is open-source and free to use.
